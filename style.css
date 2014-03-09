@@ -1,0 +1,86 @@
+/*
+ Theme Name:   Appsterdam Milano
+ Theme URI:    http://www.appsterdammilan.com
+ Description:  Layout del sito www.appsterdammilan.com
+ Author:       Salvatore Laisa
+ Author URI:   http://www.salvatorelaisa.net
+ Version:      1.0.0
+ Tags:         red, white, bootstrap, appsterdam, milan, milano, jquery, responsive, less
+ Text Domain:  AppsterdamMilano
+*/
+
+/* =Bootstrap
+-------------------------------------------------------------- */
+@import url(css/bootstrap.min.css);
+
+/* =Tipografia
+-------------------------------------------------------------- */
+body{
+	background: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+a{
+	color: #c41414;
+	text-decoration: underline;
+}
+a:hover{
+	color: #c41414;
+	text-decoration: none;
+}
+header nav{
+	text-align: right;
+}
+header nav li a{
+	text-transform: uppercase;
+	color: #000;
+	padding: 5px;
+	transition: all 0.4s ease;
+	text-decoration: none;
+}
+header nav li a:hover{
+	color: #fff;
+	background-color: #c41414;
+}
+#corpo article h2{
+	font-size: 24px;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+body{
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+header,
+#corpo article{
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 10px 10px 25px;
+}
+header h1{
+	margin-bottom: 20px;
+}
+header nav{
+	margin-bottom: 40px;
+}
+header nav li{
+	margin: 10px 0;
+}
+header .info{
+	margin: 0px;
+}
+#corpo article{
+	margin: 20px 0;
+}
+#corpo article:first-child{
+	margin-top: 0;
+}
+#corpo article h2{
+	margin: 20px 0;
+	border-left: 5px solid #c41414;
+	padding-left: 10px;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
