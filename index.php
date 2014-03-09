@@ -45,21 +45,17 @@
 				</small></p>
 			</header>
 			<section id="corpo" class="col-sm-9">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
-					<h2>Appsterdam Milan</h2>
-					<p>Welcome to the official Embassy Page of Appsterdam Milan.</p>
-					<p>The best place in the world to be and become an App Maker.</p>
+					<h2><a href="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+					<?php the_content(); ?>
 				</article>
+				<?php endwhile; else: ?>
 				<article>
-					<h2>Appsterdam Milan</h2>
-					<p>Welcome to the official Embassy Page of Appsterdam Milan.</p>
-					<p>The best place in the world to be and become an App Maker.</p>
+					<h2>Ops...</h2>
+					<p>Qui non ci sono i droidi che state cercando!</p>
 				</article>
-				<article>
-					<h2>Appsterdam Milan</h2>
-					<p>Welcome to the official Embassy Page of Appsterdam Milan.</p>
-					<p>The best place in the world to be and become an App Maker.</p>
-				</article>
+				<?php endif; ?>
 			</section>
 		</section>
 	</section>

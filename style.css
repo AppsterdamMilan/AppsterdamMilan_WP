@@ -45,6 +45,13 @@ header nav li a:hover{
 #corpo article h2{
 	font-size: 24px;
 }
+#corpo article h2 a{
+	color: #000;
+	text-decoration: none;
+}
+#corpo article h2 a:hover{
+	text-decoration: underline;
+}
 
 /* =Layout
 -------------------------------------------------------------- */
@@ -72,6 +79,7 @@ header .info{
 }
 #corpo article{
 	margin: 20px 0;
+	overflow: hidden;
 }
 #corpo article:first-child{
 	margin-top: 0;
