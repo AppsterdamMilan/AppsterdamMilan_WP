@@ -31,7 +31,8 @@
 			<header class="col-md-3">
 				<h1>
 					<a href="<?php bloginfo('url'); ?>">
-						<?php bloginfo('name') ?>
+						
+						<img src="<?php bloginfo('template_url'); ?>/img/logo_mi.png" alt="<?php bloginfo('name') ?>">
 					</a>
 				</h1>
 				<?php wp_nav_menu(array(

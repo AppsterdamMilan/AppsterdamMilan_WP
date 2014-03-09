@@ -102,6 +102,8 @@ header .info{
 	header{
 		margin: 15px;
 		margin-top: 0;
+		text-align: center;
+		position: relative;
 	}
 	header nav{
 		margin-bottom: 0;
