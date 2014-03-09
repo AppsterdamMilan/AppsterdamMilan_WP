@@ -28,7 +28,7 @@
 	
 	<section class="container">
 		<section class="row">
-			<header class="col-sm-3">
+			<header class="col-md-3">
 				<h1>
 					<a href="<?php bloginfo('url'); ?>">
 						<?php bloginfo('name') ?>
@@ -44,7 +44,7 @@
 					<a href="">Privacy</a> | <a href="">Terms and conditions</a>
 				</small></p>
 			</header>
-			<section id="corpo" class="col-sm-9">
+			<section id="corpo" class="col-md-9">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
 					<h2><a href="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
@@ -56,6 +56,10 @@
 					<p>Qui non ci sono i droidi che state cercando!</p>
 				</article>
 				<?php endif; ?>
+
+				<section class="paginate">
+					Pagina 1 di 8
+				</section>
 			</section>
 		</section>
 	</section>

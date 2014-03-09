@@ -52,7 +52,13 @@ header nav li a:hover{
 #corpo article h2 a:hover{
 	text-decoration: underline;
 }
-
+#corpo .paginate{
+	background-color: #292929;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+}
 /* =Layout
 -------------------------------------------------------------- */
 body{
@@ -92,3 +98,27 @@ header .info{
 
 /* =Media Queries
 -------------------------------------------------------------- */
+@media (max-width: 767px){
+	header{
+		margin: 15px;
+		margin-top: 0;
+	}
+	header nav{
+		margin-bottom: 0;
+		display: none;
+	}
+	header nav li{
+		background-color: #c41414;
+		margin: 0;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+	}
+	header nav li:last-child{
+		border-bottom: 0;
+	}
+	header nav li a{
+		display: block;
+		text-align: center;
+		color: white;
+		padding: 10px;
+	}
+}
