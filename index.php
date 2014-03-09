@@ -35,6 +35,7 @@
 					</a>
 				</h1>
 				<?php wp_nav_menu(array(
+					'theme_location' => 'principale',
 					'container' => 'nav',
 					'menu_class' => 'list-unstyled'
 				)); ?>

@@ -6,9 +6,13 @@ function immEvidenza(){
 function stiliEditor(){
 	add_editor_style();
 }
+function navigazione(){
+	register_nav_menu( 'principale', 'Menu principale' );
+}
 
 add_action('init','immEvidenza');
 add_action('init','stiliEditor');
+add_action('init','navigazione');
 
 
 
