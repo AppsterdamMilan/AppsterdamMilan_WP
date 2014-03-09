@@ -99,11 +99,22 @@ header .info{
 /* =Media Queries
 -------------------------------------------------------------- */
 @media (max-width: 767px){
+	body{
+		padding-top: 15px;
+	}
 	header{
 		margin: 15px;
 		margin-top: 0;
 		text-align: center;
 		position: relative;
+	}
+	header .btn.btn-primary{
+		background-color: #c41414;
+		border-radius: 0;
+		border: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 	header nav{
 		margin-bottom: 0;

@@ -35,6 +35,9 @@
 						<img src="<?php bloginfo('template_url'); ?>/img/logo_mi.png" alt="<?php bloginfo('name') ?>">
 					</a>
 				</h1>
+				<button class="btn btn-primary btn-lg visible-xs visible-sm">
+					<span class="glyphicon glyphicon-list"></span>
+				</button>
 				<?php wp_nav_menu(array(
 					'theme_location' => 'principale',
 					'container' => 'nav',
