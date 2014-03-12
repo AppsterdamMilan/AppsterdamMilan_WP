@@ -62,7 +62,8 @@
 				<?php endif; ?>
 
 				<section class="paginate">
-					Pagina 1 di 8
+					<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+					Pagina <?php echo($page); ?> di <?php echo($wp_query->max_num_pages); ?>
 				</section>
 			</section>
 		</section>
