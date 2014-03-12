@@ -15,10 +15,19 @@ function js_handling(){
 	wp_register_script('app', get_bloginfo('template_url') . "/js/appsterdam.js", array('jquery'), "1.0.0", true);
 	wp_enqueue_script('app');	
 }
+function defineSidebars(){
+	register_sidebar(array(
+		'name' => 'Credits',
+		'description' => 'Appears below main navigation and/or footer',
+		'before_widget' => '<div class="widget credits">',
+		'after_widget' => '</div>'
+	));
+}
 
 add_action('init','feat_image');
 add_action('init','editor_style');
 add_action('init','navigation');
+add_action('widgets_init','defineSidebars');
 add_action('wp_enqueue_scripts','js_handling');
 
 
