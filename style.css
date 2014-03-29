@@ -24,10 +24,26 @@ a:hover {
   color: #c41414;
   text-decoration: none;
 }
+.btn.btn-default {
+  text-decoration: none;
+}
 .btn.btn-default:hover {
   background-color: #c41414;
   border-color: #c41414;
   color: #fff;
+  transition: all 0.4s ease;
+}
+.social a {
+  font-size: 34px;
+  margin-right: 15px;
+  color: #333;
+  transition: all 0.4s ease;
+}
+.social a:last-child {
+  margin-right: 0;
+}
+.social a:hover {
+  color: #c41414;
 }
 header nav {
   text-align: left;

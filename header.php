@@ -36,13 +36,18 @@
 					</a>
 				</h1>
 				<button class="btn btn-primary btn-lg visible-xs visible-sm">
-					<span class="glyphicon glyphicon-list"></span>
+					<span class="fa fa-bars"></span>
 				</button>
 				<?php wp_nav_menu(array(
 					'theme_location' => 'principale',
 					'container' => 'nav',
 					'menu_class' => 'list-unstyled'
 				)); ?>
+				<p class="social">
+					<a target="_blank" href="https://www.facebook.com/AppsterdamMilan"><span class="fa fa-facebook-square"></span></a>
+					<a target="_blank" href="https://twitter.com/AppsterdamMilan"><span class="fa fa-twitter"></span></a>
+					<a target="_blank" href="https://github.com/AppsterdamMilan"><span class="fa fa-github"></span></a>
+				</p>
 				<p class="info"><small>&copy; Stichting Appsterdam <?php the_time('Y'); ?></small></p>
 				<p class="info"><small>
 					<a href="">Privacy</a> | <a href="">Terms and conditions</a>

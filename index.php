@@ -6,10 +6,10 @@
 					<p><small>Scritto il <?php the_time('d F Y'); ?></small></p>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<?php the_excerpt(); ?>
-					<button class="btn btn-default">
+					<a href="<?php the_permalink(); ?>" class="btn btn-default">
 						Leggi tutto
 						<span class="fa fa-chevron-right"></span>
-					</button>
+					</a>
 				</article>
 				<?php endwhile; else: ?>
 				<article>
