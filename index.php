@@ -8,7 +8,7 @@
 					<?php the_excerpt(); ?>
 					<button class="btn btn-default">
 						Leggi tutto
-						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="fa fa-chevron-right"></span>
 					</button>
 				</article>
 				<?php endwhile; else: ?>
