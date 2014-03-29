@@ -23,12 +23,30 @@ function defineSidebars(){
 		'after_widget' => '</div>'
 	));
 }
+function apps_login(){
+	?>
+	
+	<style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php bloginfo('template_url'); ?>/img/logo_mi.png);
+            width: 210px;
+            height: 174px;
+            background-size: 210px 174px;
+        }
+        body.login div#login{
+        	padding: 4.5% 0 0;
+        }
+    </style>
+	
+	<?php
+}
 
 add_action('init','feat_image');
 add_action('init','editor_style');
 add_action('init','navigation');
 add_action('widgets_init','defineSidebars');
 add_action('wp_enqueue_scripts','js_handling');
+add_action('login_head', 'apps_login');
 
 
 ?>
