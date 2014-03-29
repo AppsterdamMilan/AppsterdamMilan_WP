@@ -1,0 +1,163 @@
+// =Bootstrap
+// --------------------------------------------------------------
+@import url(css/bootstrap.min.css);
+
+/*
+ Theme Name:   Appsterdam Milan
+ Theme URI:    http://www.appsterdammilan.com
+ Description:  Layout del sito www.appsterdammilan.com
+ Author:       Salvatore Laisa
+ Author URI:   http://www.salvatorelaisa.net
+ Version:      1.0.0
+ Tags:         red, white, bootstrap, appsterdam, milan, milano, jquery, responsive, less
+ Text Domain:  AppsterdamMilan_WP
+*/
+
+// Variabili
+@rosso: #c41414;
+
+// =Tipografia
+// -------------------------------------------------------------- 
+body{
+	background: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+a{
+	color: @rosso;
+	text-decoration: underline;
+}
+a:hover{
+	color: @rosso;
+	text-decoration: none;
+}
+.btn.btn-default{
+	//color: @rosso;
+	//border-color: lighten(#333,40%);
+}
+.btn.btn-default:hover{
+	background-color: @rosso;
+	border-color: @rosso;
+	color: #fff;
+}
+header{
+	nav{
+		text-align: right;
+		li a{
+			text-transform: uppercase;
+			color: #000;
+			padding: 5px;
+			transition: all 0.4s ease;
+			text-decoration: none;
+		}
+		li a:hover{
+			color: #fff;
+			background-color: @rosso;
+		}
+	}
+}
+#corpo{
+	article{
+		h2{
+			font-size: 24px;
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.paginate{
+		background-color: #292929;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		font-size: 16px;
+	}
+}
+// =Layout
+// -------------------------------------------------------------- 
+body{
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+header,
+#corpo article{
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 10px 10px 25px;
+}
+header{
+	h1{
+		margin-bottom: 20px;
+	}
+	nav{
+		margin-bottom: 40px;
+		li{
+			margin: 10px 0;
+		}
+	}
+	.info{
+		margin: 0px;
+	}
+}
+#corpo{
+	article{
+		margin: 20px 0;
+		overflow: hidden;
+		h2{
+			margin: 20px 0;
+			border-left: 5px solid #c41414;
+			padding-left: 10px;
+		}
+	}
+	article:first-child{
+		margin-top: 0;
+	}
+}
+
+
+// =Media Queries
+// -------------------------------------------------------------- 
+@media (max-width: 767px){
+	body{
+		padding-top: 15px;
+	}
+	.btn.btn-default{
+		width: 100%;
+	}
+	header{
+		margin: 15px;
+		margin-top: 0;
+		text-align: center;
+		position: relative;
+		.btn.btn-primary{
+			background-color: @rosso;
+			border-radius: 0;
+			border: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		nav{
+			margin-bottom: 0;
+			display: none;
+			li{
+				background-color: @rosso;
+				margin: 0;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
+				a{
+					display: block;
+					text-align: center;
+					color: white;
+					padding: 10px;
+				}
+			}
+			li:last-child{
+				border-bottom: 0;
+			}
+		}
+	}
+}

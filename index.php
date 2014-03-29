@@ -4,7 +4,11 @@
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<?php the_content(); ?>
+					<?php the_excerpt(); ?>
+					<button class="btn btn-default">
+						Leggi tutto
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</button>
 				</article>
 				<?php endwhile; else: ?>
 				<article>
