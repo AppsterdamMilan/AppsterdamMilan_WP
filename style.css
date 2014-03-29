@@ -28,7 +28,7 @@ a:hover {
   color: #fff;
 }
 header nav {
-  text-align: right;
+  text-align: left;
 }
 header nav li a {
   text-transform: uppercase;
