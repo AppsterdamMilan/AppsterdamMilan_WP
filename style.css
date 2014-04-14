@@ -24,6 +24,9 @@ a:hover {
   color: #c41414;
   text-decoration: none;
 }
+.btn {
+  border-radius: 0;
+}
 .btn.btn-default {
   text-decoration: none;
 }
@@ -125,7 +128,6 @@ header .info {
   }
   header .btn.btn-primary {
     background-color: #c41414;
-    border-radius: 0;
     border: 0;
     position: absolute;
     top: 0;

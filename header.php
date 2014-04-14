@@ -11,7 +11,7 @@
 		<!-- Metadati e collegamenti vari -->
 		<link rel="profile" href="http://gmpg.org/xfn/11" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/logo_mi.png" type="image/png">
+		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/logo_mi.svg" type="image/png">
 
 		<!-- Foglio di stile principale -->
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" >
@@ -32,7 +32,7 @@
 				<h1>
 					<a href="<?php bloginfo('url'); ?>">
 						
-						<img src="<?php bloginfo('template_url'); ?>/img/logo_mi.png" alt="<?php bloginfo('name') ?>">
+						<img src="<?php bloginfo('template_url'); ?>/img/logo_mi.svg" alt="<?php bloginfo('name') ?>">
 					</a>
 				</h1>
 				<button class="btn btn-primary btn-lg visible-xs visible-sm">

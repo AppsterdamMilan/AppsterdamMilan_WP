@@ -28,7 +28,7 @@ function apps_login(){
 	
 	<style type="text/css">
         body.login div#login h1 a {
-            background-image: url(<?php bloginfo('template_url'); ?>/img/logo_mi.png);
+            background-image: url(<?php bloginfo('template_url'); ?>/img/logo_mi.svg);
             width: 210px;
             height: 174px;
             background-size: 210px 174px;
