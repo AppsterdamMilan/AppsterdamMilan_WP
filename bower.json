@@ -1,0 +1,27 @@
+{
+  "name": "AppsterdamMilan_WP",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AppsterdamMilan/AppsterdamMilan_WP",
+  "authors": [
+    "Salvatore Laisa <moebiusmania@gmail.com>"
+  ],
+  "keywords": [
+    "appsterdam",
+    "milan",
+    "wordpress",
+    "theme"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "fontawesome": "~4.3.0"
+  }
+}
