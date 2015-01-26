@@ -2,7 +2,7 @@
 WordPress theme for the Appsterdam Milan website.
 
 ### Install & setup
-Move the folder (or clone the repo) in your **WordPress/wp-content/themes/** folder, then open the terminal on the theme folde location and run
+Move the folder (or clone the repo) in your **WordPress/wp-content/themes/** folder, then open the terminal on the theme folder location and run
 
 	npm install
 

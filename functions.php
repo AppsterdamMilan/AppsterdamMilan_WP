@@ -11,7 +11,7 @@ function navigation(){
 }
 function js_handling(){
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', get_bloginfo('template_url') . "/js/jquery-2.1.0.min.js", false, "2.1.0", true);
+	wp_register_script('jquery', get_bloginfo('template_url') . "/bower_components/jquery/dist/jquery.min.js", false, "2.1.3", true);
 	wp_register_script('app', get_bloginfo('template_url') . "/js/appsterdam.js", array('jquery'), "1.0.0", true);
 	wp_enqueue_script('app');	
 }

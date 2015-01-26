@@ -22,6 +22,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "html5shiv-dist": "~3.6.2"
   }
 }

@@ -18,7 +18,7 @@
 		
 		<!-- HTML5 Shiv -->
 		<!--[if lt IE 9]>
-			<script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
+			<script src="<?php bloginfo('template_url'); ?>/bower_components/html5shiv-dist/html5shiv.js"></script>
 		<![endif]-->
 
 		<!-- riferimento head per WordPress -->
