@@ -5,6 +5,11 @@
 				<article>
 					<p><small>Scritto il <?php the_time('d F Y'); ?></small></p>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<?php if ( has_post_thumbnail() ) { ?>
+					<figure>
+						<?php the_post_thumbnail(array(850,250)); ?>
+					</figure>
+					<?php } ?>
 					<?php the_excerpt(); ?>
 					<a href="<?php the_permalink(); ?>" class="btn btn-default">
 						Leggi tutto

@@ -5,6 +5,11 @@
 				<article>
 					<p><small>- <?php the_time('d F Y'); ?></small></p>
 					<h2><?php the_title(); ?></h2>
+					<?php if ( has_post_thumbnail() ) { ?>
+					<figure>
+						<?php the_post_thumbnail(array(850,250)); ?>
+					</figure>
+					<?php } ?>
 					<?php the_content(); ?>
 				</article>
 				<?php endwhile; else: ?>

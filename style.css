@@ -1,6 +1,4 @@
-/*@import url(css/bootstrap.min.css);*/
 @import url(bower_components/bootstrap/dist/css/bootstrap.min.css);
-
 @import url(bower_components/fontawesome/css/font-awesome.min.css);
 /*
  Theme Name:   Appsterdam Milan
@@ -63,6 +61,9 @@ header nav li a:hover {
   color: #fff;
   background-color: #c41414;
 }
+#corpo article {
+  overflow: hidden;
+}
 #corpo article h2 {
   font-size: 24px;
 }
@@ -72,6 +73,10 @@ header nav li a:hover {
 }
 #corpo article h2 a:hover {
   text-decoration: underline;
+}
+#corpo article figure {
+  margin-bottom: 15px;
+  margin-left: -10px;
 }
 #corpo .paginate {
   background-color: #292929;
