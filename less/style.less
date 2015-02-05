@@ -78,6 +78,9 @@ header{
 #corpo{
 	article{
 		overflow: hidden;
+		opacity: 0;
+		transform: scale(0.5);
+		transition: @anim;
 		h2{
 			font-size: 24px;
 			a{
@@ -92,6 +95,10 @@ header{
 			margin-bottom: 15px;
 			margin-left: -10px;
 		}
+	}
+	article.enter{
+		opacity: 1;
+		transform: scale(1);
 	}
 	.paginate{
 		background-color: #292929;

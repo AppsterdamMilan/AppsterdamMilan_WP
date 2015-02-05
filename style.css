@@ -63,6 +63,9 @@ header nav li a:hover {
 }
 #corpo article {
   overflow: hidden;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.4s ease;
 }
 #corpo article h2 {
   font-size: 24px;
@@ -77,6 +80,10 @@ header nav li a:hover {
 #corpo article figure {
   margin-bottom: 15px;
   margin-left: -10px;
+}
+#corpo article.enter {
+  opacity: 1;
+  transform: scale(1);
 }
 #corpo .paginate {
   background-color: #292929;
