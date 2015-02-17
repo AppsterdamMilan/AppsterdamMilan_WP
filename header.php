@@ -52,4 +52,7 @@
 				<p class="info"><small>
 					<a href="">Privacy</a> | <a href="">Terms and conditions</a>
 				</small></p>
+				<!-- <div class="widget embed">
+					<iframe width="100%" height="430" src="http://meetu.ps/2GCTlB" frameborder="0"></iframe>
+				</div> -->
 			</header>

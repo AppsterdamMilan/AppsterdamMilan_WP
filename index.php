@@ -1,6 +1,16 @@
 <?php get_header(); ?>
 
 			<section id="corpo" class="col-md-9">
+				<article class="nextMeetup">
+					<p class="banner">
+						<span class="fa fa-map-marker"></span>
+						Prossimo Meetup: <strong></strong>
+					</p>
+					<span class="fa fa-refresh fa-spin"></span>
+					<section>
+						
+					</section>
+				</article>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
 					<p><small>Scritto il <?php the_time('d F Y'); ?></small></p>
