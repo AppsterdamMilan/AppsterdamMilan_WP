@@ -153,10 +153,23 @@ header .info {
 #corpo article.nextMeetup span.fa-spin {
   position: absolute;
   left: 50%;
-  top: 18px;
+  top: 14px;
   font-size: 24px;
   font-weight: 300;
   margin-left: -12px;
+}
+#corpo article.nextMeetup div.row {
+  display: none;
+}
+#corpo article.nextMeetup .col-sm-2 {
+  text-align: center;
+}
+#corpo article.nextMeetup .col-sm-2 p {
+  margin-top: 6px;
+}
+#corpo article.nextMeetup .col-sm-2 .fa {
+  font-size: 1.8em;
+  margin-top: 8px;
 }
 #corpo article {
   margin: 20px 0;

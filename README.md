@@ -24,7 +24,7 @@ The theme is based on few libraries
 On the WordPress side the theme is based on few basic templates and **Custom Post Types**.
 
 ### Grunt actions
-Grunt is used for watch, compile, minimize and concatenate .less, .css and .js files.
+Grunt is used for watch and compile .less and .css files.
 
 Open the terminal on theme folder location and just run the
 

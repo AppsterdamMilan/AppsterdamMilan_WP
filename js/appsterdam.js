@@ -22,8 +22,9 @@ function init(){
 		var _evt = r.results[0];
 		console.log(_evt);
 		$(_parent + ' .fa-spin').hide();
+		$(_parent + ' div.row').show();
 		$(_parent + ' .banner').slideDown();
-		$(_parent + ' strong').html(_evt.name);
+		$(_parent + ' .banner strong').html(_evt.name);
 		//.attr('href',_evt.event_url);
 		$(_parent + ' section').append(_evt.description);
 	});
