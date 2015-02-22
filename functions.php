@@ -1,5 +1,6 @@
 <?php 
 
+// Actions/filters definitions
 function feat_image(){
 	add_theme_support('post-thumbnails');
 }
@@ -45,6 +46,7 @@ function apps_favicon(){
 	echo '<link rel="icon" type="image/png" href="' . $favicon_url . '" >';
 }
 
+// Actions/filters calls
 add_action('init','feat_image');
 add_action('init','editor_style');
 add_action('init','navigation');
@@ -53,5 +55,7 @@ add_action('wp_enqueue_scripts','js_handling');
 add_action('login_head', 'apps_login');
 add_action('admin_head', 'apps_favicon');
 
+// Includes
+include('functions/post-types.php');
 
 ?>

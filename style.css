@@ -183,6 +183,18 @@ header .info {
 #corpo article:first-child {
   margin-top: 0;
 }
+.single.video iframe {
+  width: 100%;
+  height: 400px;
+}
+.single.talklab iframe,
+.talklab iframe {
+  width: 100%;
+  height: 400px;
+}
+.talklab article .btn-block {
+  margin-top: 20px;
+}
 @media (max-width: 767px) {
   body {
     padding-top: 15px;

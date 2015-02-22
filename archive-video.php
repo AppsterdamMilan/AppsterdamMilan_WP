@@ -1,30 +1,6 @@
 <?php get_header(); ?>
 
 			<section id="corpo" class="col-md-9">
-				<article class="nextMeetup">
-					<p class="banner">
-						<span class="fa fa-calendar"></span>
-						Prossimo Meetup: <strong></strong>
-					</p>
-					<span class="fa fa-refresh fa-spin"></span>
-					<div class="row">
-						<section class="col-sm-12 col-md-6"></section>
-						<div class="col-sm-2 people">
-							<span class="fa fa-users"></span>
-							<p>Saremo in</p>
-							<p><strong>0</strong></p>
-						</div>
-						<div class="col-sm-2 location">
-							<span class="fa fa-map-marker"></span>
-							<p>Dove</p>
-							<p><strong>Booooh</strong></p>
-						</div>
-						<div class="col-sm-2 event">
-							<span class="fa fa-external-link"></span>
-							<p>RSVP su <br><strong>Meetup</strong>!</p>
-						</div>
-					</div>
-				</article>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
 					<p class="metadata">
@@ -39,7 +15,7 @@
 					<?php } ?>
 					<?php the_excerpt(); ?>
 					<a href="<?php the_permalink(); ?>" class="btn btn-default">
-						Leggi tutto
+						Guarda il video
 						<span class="fa fa-chevron-right"></span>
 					</a>
 				</article>
