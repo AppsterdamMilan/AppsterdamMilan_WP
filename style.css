@@ -126,6 +126,15 @@ header .info {
   position: relative;
   padding-top: 38px;
   padding-bottom: 10px;
+  overflow: hidden;
+  height: 142px;
+}
+#corpo article.nextMeetup section .content {
+  overflow: hidden;
+  height: 78px;
+}
+#corpo article.nextMeetup section .link {
+  text-decoration: none;
 }
 #corpo article.nextMeetup h2 {
   border-left: 0;
@@ -161,15 +170,40 @@ header .info {
 #corpo article.nextMeetup div.row {
   display: none;
 }
+#corpo article.nextMeetup .people strong {
+  font-size: 1.8em;
+}
 #corpo article.nextMeetup .col-sm-2 {
+  transition: all 0.4s ease;
+  margin-top: -9px;
+  padding-top: 8px;
+  padding-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
+#corpo article.nextMeetup .col-sm-2 a {
+  color: white;
+  text-decoration: none;
+}
+#corpo article.nextMeetup .col-sm-2 a:hover {
+  text-decoration: underline;
+}
 #corpo article.nextMeetup .col-sm-2 p {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 #corpo article.nextMeetup .col-sm-2 .fa {
   font-size: 1.8em;
   margin-top: 8px;
+}
+#corpo article.nextMeetup .col-sm-2.people {
+  background-color: #f9923d;
+}
+#corpo article.nextMeetup .col-sm-2.location {
+  background-color: #f7760b;
+}
+#corpo article.nextMeetup .col-sm-2.event {
+  background-color: #c95e07;
 }
 #corpo article {
   margin: 20px 0;

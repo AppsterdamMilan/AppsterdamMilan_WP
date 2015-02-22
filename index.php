@@ -8,7 +8,10 @@
 					</p>
 					<span class="fa fa-refresh fa-spin"></span>
 					<div class="row">
-						<section class="col-sm-12 col-md-6"></section>
+						<section class="col-sm-12 col-md-6">
+							<div class="content"></div>
+							<p><a class="link" href="" target="_blank">[...]</a></p>
+						</section>
 						<div class="col-sm-2 people">
 							<span class="fa fa-users"></span>
 							<p>Saremo in</p>
@@ -20,8 +23,10 @@
 							<p><strong>Booooh</strong></p>
 						</div>
 						<div class="col-sm-2 event">
-							<span class="fa fa-external-link"></span>
-							<p>RSVP su <br><strong>Meetup</strong>!</p>
+							<a href="" target="_blank">
+								<span class="fa fa-external-link"></span>
+								<p>Informazioni<br> e RSVP su <br><strong>Meetup</strong>!</p>
+							</a>
 						</div>
 					</div>
 				</article>

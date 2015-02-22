@@ -16,6 +16,7 @@
 
 // Variabili
 @red: #c41414;
+@orange: #F07108;
 @anim: all 0.4s ease;
 
 // =Tipografia
@@ -148,6 +149,17 @@ header{
 		position: relative;
 		padding-top: 38px;
 		padding-bottom: 10px;
+		overflow: hidden;
+		height: 142px;
+		section{
+			.content{
+				overflow: hidden;
+				height: 78px;
+			}
+			.link{
+				text-decoration: none;
+			}
+		}
 		h2{
 			border-left: 0;
 			padding-left: 0;
@@ -182,15 +194,45 @@ header{
 		div.row{
 			display: none;
 		}
+		.people{
+			strong{
+				font-size: 1.8em;
+			}
+		}
 		.col-sm-2{
+			transition: @anim;
+			margin-top: -9px;
+			padding-top: 8px;
+			padding-bottom: 30px;
+			color: white;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 			text-align: center;
+			a{
+				color: white;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
 			p{
-				margin-top: 6px;
+				margin-top: 5px;
 			}
 			.fa{
 				font-size: 1.8em;
 				margin-top: 8px;
 			}
+		}
+		.col-sm-2:hover{
+			
+		}
+		.col-sm-2.people{
+			background-color: lighten(@orange,12%);
+		}
+		.col-sm-2.location{
+			background-color: lighten(@orange,2%);
+		}
+		.col-sm-2.event{
+			background-color: darken(@orange,8%);
 		}
 	}
 	article{

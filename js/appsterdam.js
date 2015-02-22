@@ -25,8 +25,11 @@ function init(){
 		$(_parent + ' div.row').show();
 		$(_parent + ' .banner').slideDown();
 		$(_parent + ' .banner strong').html(_evt.name);
-		//.attr('href',_evt.event_url);
-		$(_parent + ' section').append(_evt.description);
+		$(_parent + ' .people strong').html(_evt.yes_rsvp_count);
+		$(_parent + ' .location strong').html(_evt.venue.name);
+		$(_parent + ' .event a').attr('href',_evt.event_url);
+		$(_parent + ' section .link').attr('href',_evt.event_url);
+		$(_parent + ' section .content').prepend(_evt.description);
 	});
 }
 

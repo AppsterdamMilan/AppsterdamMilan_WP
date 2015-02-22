@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
-		<!-- Set di caratteri -->
+		<!-- Charset -->
 		<meta charset="<?php bloginfo( 'charset' ); ?>" >
 
-		<!-- Titolo e descrizione -->
+		<!-- Title and description -->
 		<title><?php bloginfo('name'); ?></title>
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 		
-		<!-- Metadati e collegamenti vari -->
+		<!-- Metadati and links -->
 		<link rel="profile" href="http://gmpg.org/xfn/11" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/logo_mi.svg" type="image/png">
+		<link rel="icon" href="<?php bloginfo('template_url'); ?>/img/logo_mi.png" type="image/png">
 
-		<!-- Foglio di stile principale -->
+		<!-- Mobile -->
+		<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/img/logo_mi.svg">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="<?php bloginfo('template_url'); ?>/img/logo_mi.svg">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Main stylesheet -->
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" >
 		
 		<!-- HTML5 Shiv -->
@@ -21,7 +27,7 @@
 			<script src="<?php bloginfo('template_url'); ?>/bower_components/html5shiv-dist/html5shiv.js"></script>
 		<![endif]-->
 
-		<!-- riferimento head per WordPress -->
+		<!-- WordPress head hook -->
 		<?php wp_head(); ?>
 	</head>
 	<body>
@@ -52,7 +58,4 @@
 				<p class="info"><small>
 					<a href="">Privacy</a> | <a href="">Terms and conditions</a>
 				</small></p>
-				<!-- <div class="widget embed">
-					<iframe width="100%" height="430" src="http://meetu.ps/2GCTlB" frameborder="0"></iframe>
-				</div> -->
 			</header>
