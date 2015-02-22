@@ -31,3 +31,14 @@ Open the terminal on theme folder location and just run the
 	grunt
 
 default command to intialize the actions, there are no others Grunt tasks.
+
+### WordPress theme features
+This theme take advantage of some common WordPress theme development features:
+
+- Custom post types (Videos & Talklab)
+- Shortcodes
+- Custom login page logo
+- Post featured/cover image
+
+### Disqus
+The comment/moderation features are delegated to the Disqus platform, so there isn't any implementation of the basic WordPress comment system.

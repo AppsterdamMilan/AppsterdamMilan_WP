@@ -11,6 +11,7 @@
 					</figure>
 					<?php } ?>
 					<?php the_content(); ?>
+					<?php comments_template(); ?>
 				</article>
 				<?php endwhile; else: ?>
 				<article>

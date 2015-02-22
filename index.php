@@ -27,7 +27,10 @@
 				</article>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article>
-					<p><small>Scritto il <?php the_time('d F Y'); ?></small></p>
+					<p class="metadata">
+						<small>Scritto il <?php the_time('d F Y'); ?></small>
+						<small class="pull-right"><span class="fa fa-comments"> <?php comments_number('0','1','%'); ?></span></small>
+					</p>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<?php if ( has_post_thumbnail() ) { ?>
 					<figure>
