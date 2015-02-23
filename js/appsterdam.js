@@ -16,7 +16,13 @@ function init(){
 	});
 
 	// Loading next Mettup
-	$.getJSON(lastMeetupApiUrl,function(r,s){
+	$.ajax({
+		dataType: 'jsonp',
+  		url: lastMeetupApiUrl,
+		success: renderAPI
+	});
+
+	function renderAPI(r,s){
 		var _parent = 'article.nextMeetup';
 		console.log(r,s);
 		var _evt = r.results[0];
@@ -30,7 +36,7 @@ function init(){
 		$(_parent + ' .event a').attr('href',_evt.event_url);
 		$(_parent + ' section .link').attr('href',_evt.event_url);
 		$(_parent + ' section .content').prepend(_evt.description);
-	});
+	}
 }
 
 // init
