@@ -13,6 +13,17 @@
 				?>
 				<article>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<div class="veespoCard">
+						<veespo-card
+			                target="appsterdam-milan.talk-lab.tl-<?php echo(get_the_ID()); ?>"
+			                title="<?php the_title(); ?>" 
+			                description="<?php echo(get_the_excerpt()); ?>" 
+			                image="<?php echo( wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') )); ?>" 
+			                url="<?php the_permalink(); ?>"
+			                background="#C30101"
+			                color="#ffffff"            
+			              ></veespo-card>
+					</div>
 					<?php the_content(); ?>
 					<a href="<?php the_permalink(); ?>#disqus_thread" class="btn btn-default btn-block">
 						Discussione
@@ -68,4 +79,7 @@
 				</section>
 			</section>
 
-<?php get_footer(); ?>
+<?php 
+add_action('wp_footer','veespoCardCode');
+get_footer(); 
+?>

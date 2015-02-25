@@ -69,7 +69,7 @@ function talklab_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 5,
-		'supports'           => array( 'title', 'editor', 'author', 'excerpt', 'comments' )
+		'supports'           => array( 'title', 'editor', 'author', 'excerpt', 'comments', 'thumbnail' )
 	);
 
 	register_post_type( 'talklab', $args );

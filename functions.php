@@ -45,6 +45,9 @@ function apps_favicon(){
 	$favicon_url = get_bloginfo('template_url') . '/img/logo_mi.png';
 	echo '<link rel="icon" type="image/png" href="' . $favicon_url . '" >';
 }
+function veespoCardCode(){
+	echo('<script src="http://production.veespo.com/js/veespo-cards"></script>');
+}
 
 // Actions/filters calls
 add_action('init','feat_image');

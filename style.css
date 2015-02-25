@@ -229,6 +229,15 @@ header .info {
 .talklab article .btn-block {
   margin-top: 20px;
 }
+.talklab article .veespoCard {
+  margin: 0 auto 20px;
+}
+.talklab article .veespoCard .card-wrapper {
+  margin: 0 auto !important;
+}
+.talklab article .veespoCard h4 {
+  text-align: center;
+}
 @media (max-width: 767px) {
   body {
     padding-top: 15px;
