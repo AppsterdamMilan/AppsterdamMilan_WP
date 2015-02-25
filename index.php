@@ -56,8 +56,10 @@
 				<?php endif; ?>
 
 				<section class="paginate">
+					<?php posts_nav_link(' ',' ','<span class="prevNext pull-left"><span class="fa fa-chevron-left"></span> Prev</span>'); ?>
 					<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					Pagina <?php echo($page); ?> di <?php echo($wp_query->max_num_pages); ?>
+					<?php posts_nav_link(' ','<span class="prevNext pull-right">Next <span class="fa fa-chevron-right"></span></span>',' '); ?>
 				</section>
 			</section>
 
